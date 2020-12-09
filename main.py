@@ -93,7 +93,7 @@ class UserInterface(tk.Frame):
     
     def add_iamge(self):
         image = self.image.convert("L").resize((28, 28))
-        image.show() # DEBUG ONLY
+        #image.show() # DEBUG ONLY
         
         img_resized = np.resize(image, (28, 28, 1))
         img_buffer = np.array(img_resized)
